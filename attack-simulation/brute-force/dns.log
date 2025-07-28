@@ -1,0 +1,15 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2025-07-28-07-58-37
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
+1753689517.678090	CoL7X517rWP6utmo8a	192.168.64.6	5353	224.0.0.251	5353	udp	0	-	desktop-fdp9pg2._dosvc._tcp.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	desktop-fdp9pg2._dosvc._tcp.local	0.000000	F
+1753689517.679770	CBdHHx4DBofRD3fElf	fe80::812f:78e9:6f5c:c599	5353	ff02::fb	5353	udp	0	-	desktop-fdp9pg2._dosvc._tcp.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	desktop-fdp9pg2._dosvc._tcp.local	0.000000	F
+1753689517.931387	CoL7X517rWP6utmo8a	192.168.64.6	5353	224.0.0.251	5353	udp	0	0.521503	desktop-fdp9pg2._dosvc._tcp.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	desktop-fdp9pg2._dosvc._tcp.local	4500.000000	F
+1753689517.931506	CBdHHx4DBofRD3fElf	fe80::812f:78e9:6f5c:c599	5353	ff02::fb	5353	udp	0	0.521515	desktop-fdp9pg2._dosvc._tcp.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	desktop-fdp9pg2._dosvc._tcp.local	4500.000000	F
+1753689518.178821	CoL7X517rWP6utmo8a	192.168.64.6	5353	224.0.0.251	5353	udp	0	0.274200	desktop-fdp9pg2._dosvc._tcp.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	desktop-fdp9pg2.local	120.000000	F
+1753689518.178821	CBdHHx4DBofRD3fElf	fe80::812f:78e9:6f5c:c599	5353	ff02::fb	5353	udp	0	0.274429	desktop-fdp9pg2._dosvc._tcp.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	desktop-fdp9pg2.local	120.000000	F
+#close	2025-07-28-07-58-45
