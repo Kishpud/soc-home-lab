@@ -1,44 +1,76 @@
-<<<<<<< HEAD
-# SOC Lab by Kishor Pudasaini
-=======
-# soc-home-lab
-Documenting my SOC lab with Zeek, Suricata, and log analysis  # 🛡️ Home SOC Lab by Kishor Pudasaini
+# 🛡️ SOC Home Lab – Threat Detection by Kishor Pudasaini
 
-This project documents my self-built Security Operations Center (SOC) lab running on Ubuntu, featuring:
-
-- 🔍 Zeek for network traffic analysis
-- 📄 Log parsing and detection scripts
-- 🔧 Simulated attacker behavior
-- 📊 Plans for integration with ELK stack (Kibana, Logstash, Elasticsearch)
-
-## 📦 Tools Used
-- Zeek (installed from source)
-- Ubuntu 22.04 on UTM (macOS ARM)
-- Packet capture (pcap) files
-- bash, tshark, curl, git
-
-## 🧪 Lab Objectives
-- Parse PCAPs and generate logs
-- Detect brute-force attacks and suspicious connections
-- Automate log extraction and alert simulation
-- Document everything for public learning
-
-## 📂 Structure
-- `zeek/`: configs, logs, scripts
-- `attack-simulations/`: commands used to simulate threats
-- `notes/`: how-tos, installation steps, configs
-
-## 📸 Screenshots
-Coming soon!
-
-## 🚧 Roadmap
-- Install Zeek from source
-- Capture and analyze traffic
-- Integrate Suricata
-- Set up Kibana dashboard
-- Write detection scripts
+A hands-on cybersecurity lab built on Ubuntu with Zeek to simulate and detect real-world network threats.  
+This project demonstrates practical skills in log analysis, threat detection, and incident investigation — fully documented and published for recruiters, mentors, and hiring managers.
 
 ---
 
-Maintained by [Kishor Pudasaini]
->>>>>>> cc91b2d8e510ee36a5e46f67cec18a7ec52298ec
+## 🔍 What's Inside
+
+### ✅ Threat Detection Modules
+| Module          | Description                                                    |
+|------------------|----------------------------------------------------------------|
+| Brute Force      | Detection of repeated login attempts (e.g., SSH, RDP)         |
+| Port Scan        | Identification of IPs scanning multiple ports in short time   |
+| DNS Tunneling    | Analysis of DNS queries for suspicious domain behavior        |
+
+---
+
+## ⚙️ Tools Used
+
+- **Zeek** – Network Security Monitor for parsing PCAPs
+- **Linux (Ubuntu)** – Running inside UTM on macOS
+- **Bash + awk + grep** – For log filtering and threat hunting
+- **Git & GitHub** – For documenting and version-controlling lab work
+
+---
+
+## 📁 Folder Structure
+
+SOC-Lab/
+├── threat-detection/
+│ ├── brute-force/
+│ │ └── analysis.md
+│ ├── port-scan/
+│ │ └── analysis.md
+│ └── dns-tunneling/
+│ └── analysis.md
+
+yaml
+Copy
+Edit
+
+Each module contains:
+- 📄 `analysis.md`: step-by-step analyst log
+- 📊 Raw logs from Zeek (`conn.log`, `http.log`, `weird.log`, etc.)
+- 🔧 Command-line workflows used in real SOC environments
+
+---
+
+## 🚀 Why This Project Matters
+
+This home lab proves I can:
+- Analyze network traffic using Zeek
+- Detect real threat patterns like brute-force and scanning
+- Communicate findings through professional documentation
+- Work like a Tier 1/2 SOC Analyst, independently
+
+---
+
+## 🛠️ Future Roadmap
+
+- [ ] Simulate brute-force traffic using Kali VM
+- [ ] Integrate Suricata for signature-based detection
+- [ ] Create visual dashboards using ELK stack
+- [ ] Automate alerts using Python scripts
+
+---
+
+## 📇 About Me
+
+**Kishor Pudasaini**  
+📍 Sydney, Australia  
+🎯 Aspiring SOC Analyst | Cybersecurity Graduate  
+🔗 [GitHub Profile](https://github.com/Kishpud)
+
+_“Hands-on before hype.”_
